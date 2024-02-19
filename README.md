@@ -16,7 +16,7 @@ If we mess up the state file, everything gone, hard to troubleshoot, hard to mai
 
 Every time we change the terraform for one env, it will scan & talk to every account. Then the network traffic will be high for no reason.
 
-**What if we split the state file for each env to avoid those kinds of issues!!!**
+## **What if we split the state file for each env to avoid those kinds of issues!!!**
 
 <aside>
 💡 Workspaces allow users to manage different sets of infrastructure using the same configuration by isolating state files.
