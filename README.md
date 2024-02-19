@@ -57,9 +57,11 @@ We will apply terraform in each workspace.
 
 2) Create a new role in master account & trust to master account itself / Create a new role in dev account & trust to master account.
 
-![image](https://github.com/myathway-lab/Using-terraform-workspaces/assets/157335804/8c20725b-7dbb-433a-aaf3-55a3f42ea6b8)
+![image](https://github.com/myathway-lab/Using-terraform-workspaces/assets/157335804/c1627e1e-7d65-4bd9-9cbd-31a0f5f08bcd)
 
-![image](https://github.com/myathway-lab/Using-terraform-workspaces/assets/157335804/a5c47e47-a1a1-4170-b883-a7af786bf086)
+![image](https://github.com/myathway-lab/Using-terraform-workspaces/assets/157335804/81e1bb74-62ab-46fe-ba30-f5fbe4e5135f)
+
+
 
 
 We will use those assumed roles to create AWS resources. 
@@ -195,13 +197,15 @@ vagrant@kindcluster-box:~/tf-demo/terraform-workspaces$ terraform workspace list
 vagrant@kindcluster-box:~/tf-demo/terraform-workspaces$ terraform workspace select mt-lab-master-mgmt
 Switched to workspace "mt-lab-master-mgmt".
 
-![image](https://github.com/myathway-lab/Using-terraform-workspaces/assets/157335804/e959c74c-3bad-48ec-a7f5-034f7b5db0fd)
+
+![image](https://github.com/myathway-lab/Using-terraform-workspaces/assets/157335804/050bd494-25d0-4a27-b527-10e4fd31db66)
 
 
 
 Let’s verify VPC is created in Master env. 
 
-![image](https://github.com/myathway-lab/terraform-workspace01/assets/157335804/6f7308c0-3825-4726-bc46-31d45f2097d6)
+![image](https://github.com/myathway-lab/Using-terraform-workspaces/assets/157335804/ccd10d1b-5175-45ad-8e2d-e9027e347fe9)
+
 
 
 6) Switch the workspace to Dev & apply the terraform in Dev env
@@ -220,12 +224,14 @@ vagrant@kindcluster-box:~/tf-demo/terraform-workspaces$ terraform apply
 
 Let’s verify the VPC is created in Dev env. 
 
-![image](https://github.com/myathway-lab/terraform-workspace01/assets/157335804/b0f481fe-4029-47f6-bced-c534d1900e3d)
+![image](https://github.com/myathway-lab/Using-terraform-workspaces/assets/157335804/d53a5b84-1c8e-481d-9b0f-274e0725582d)
+
 
 
 7) Now we have two state files for master & dev workspaces. 
 
-![image](https://github.com/myathway-lab/terraform-workspace01/assets/157335804/8c56287c-9fb6-4853-831e-cd46457096a2)
+![image](https://github.com/myathway-lab/Using-terraform-workspaces/assets/157335804/8115171e-9e6d-4e83-a43d-1850482eff3f)
+
 
 
 8) We can use tfvars file to override the variables inside variables.tf. 
