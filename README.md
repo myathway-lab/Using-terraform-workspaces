@@ -36,7 +36,7 @@ We will use assumed role to create AWS resources.
 
 We will apply terraform in each workspace.
 
-**1) We will use AWS master account to connect to AWS env using terraform. **
+1) We will use AWS master account to connect to AWS env using terraform.
 
 - .aws/config
     
