@@ -1,5 +1,5 @@
-**Using the terraform-workspaces**
-# TF Workspaces to separate state data
+# Using the terraform-workspaces
+# TF Workspaces to separate TF state data
 
 **Using the terraform module with default workspace -** 
 
