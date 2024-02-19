@@ -1,5 +1,5 @@
 # Using the terraform-workspaces
-# TF Workspaces to separate TF state data
+## TF Workspaces to separate TF state data
 
 **Using the terraform module with default workspace -** 
 
@@ -259,4 +259,4 @@ Let’s verify the VPC is created in Dev env.
     terraform plan -var-file dev-variables.tfvars
     terraform apply -var-file dev-variables.tfvars
     ```
-## Using-terraform-workspaces
+
