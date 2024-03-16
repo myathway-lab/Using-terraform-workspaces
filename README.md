@@ -5,7 +5,7 @@
 ## Summary ## 
 
 1)  Using the terraform module with default workspace
-2)  What if we split the state file for each env to avoid those kinds of issues?
+2)  What if we split the state file 
 3)  Lab
 
  <br>
